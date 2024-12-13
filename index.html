@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meteorologinė stotelė</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="city-selector">
+        <label for="city">Pasirinkite miestą:</label>
+        <select id="city">
+            <option value="vilnius">Vilnius</option>
+            <option value="kaunas">Kaunas</option>
+            <option value="klaipeda">Klaipėda</option>
+            <option value="siauliai">Šiauliai</option>
+            <option value="panevezys">Panevėžys</option>
+        </select>
+    </div>
+    <div class="container">
+        <h1>Meteorologinė stotelė</h1>
+        <div class="weather-info">
+            <div class="info">
+                <h2>Temperatūra:</h2>
+                <p id="temperature">--°C</p>
+            </div>
+            <div class="info">
+                <h2>Drėgmė:</h2>
+                <p id="humidity">--%</p>
+            </div>
+            <div class="info">
+                <h2>Vėjo greitis:</h2>
+                <p id="wind-speed">-- km/h</p>
+            </div>
+        </div>
+        <button id="refresh-btn">Atnaujinti duomenis</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
